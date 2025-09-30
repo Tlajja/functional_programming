@@ -29,3 +29,4 @@ lib3Tests = testGroup "Lib3 tests" (
   map (\e -> testCase (show e ++ " is parsed") $
     Lib3.runParser Lib3.parseCommand (Lib2.toCliCommand e) @?= Right (e, "")
   ) Lib1.examples)
+
