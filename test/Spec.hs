@@ -10,6 +10,7 @@ main :: IO ()
 main = defaultMain tests
 
 tests :: TestTree
+<<<<<<< HEAD
 tests = testGroup "Tests" [lib1Tests, lib2Tests, lib3Tests]
 
 lib1Tests :: TestTree
