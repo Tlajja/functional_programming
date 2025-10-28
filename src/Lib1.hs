@@ -1,5 +1,6 @@
 module Lib1
     ( examples, Command(..), Dumpable(..)
+    , Card(..), Rank (..), Suit(..)
     ) where
 
 

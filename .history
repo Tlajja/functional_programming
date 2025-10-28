@@ -1,3 +1,45 @@
+create    deck        ; draw 6
+create    deck        ; draw 6
+   create deck
+create          deck
+create deck; shuffle deck; draw 123; add Ace of Spades
+draw 5
+dump examples
+dump
+ToCliCommand
+draw 3
+dump examples
+play Ace of Spades
+count cards
+show deck
+remove Ace of Diamonds
+add Ace of Spades
+add ace of spades
+add ace of spade
+create deck
+draw 5
+shuffle deck
+shuffledeck
+shuffle deck
+create-deck; shuffle-deck;          draw       4                 ;              count-cards
+create-deck; shuffle-deck; draw 4;              count-cards
+create-deck; shuffle-deck; draw 4; count-cards
+create-deck; shuffle-deck 
+create-deck; shuffle-deck; draw-cards 4
+create-deck; shuffle-deck; draw-cards 4;
+create-deck; shuffle-deck; draw-cards 4
+create-deck; shuffle-deck; draw-cards 4
+create-deck; shuffle-deck
+create-deck; shuffle-deck;
+create-decl; shuffle-deck;
+;
+create-decl; shuffle-deck
+create-decl; shuffle-deck; draw-cards 3
+shuffle-deck; create-deck; draw-cards 4
+shuffle-deck; create-deck; draw-cards 4
+shuffle-deck; create-deck; draw-cards 4; add-cards 4
+create-deck
+shuffle-deck
 dump\ examples 
 dump dump\ examples 
 dump\ examples 

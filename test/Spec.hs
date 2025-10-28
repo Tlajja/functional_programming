@@ -4,13 +4,14 @@ import Test.Tasty.HUnit ( testCase, (@?=) )
 
 import Lib1 qualified
 import Lib2 qualified
+
 import Lib3 qualified
 
 main :: IO ()
 main = defaultMain tests
 
 tests :: TestTree
-<<<<<<< HEAD
+
 tests = testGroup "Tests" [lib1Tests, lib2Tests, lib3Tests]
 
 lib1Tests :: TestTree
@@ -25,9 +26,12 @@ lib2Tests = testGroup "Lib2 tests" (
     Lib2.parseCommand (Lib2.toCliCommand e) @?= Right (e, "")
   ) Lib1.examples)
 
+
 lib3Tests :: TestTree
 lib3Tests = testGroup "Lib3 tests" (
   map (\e -> testCase (show e ++ " is parsed") $
     Lib3.runParser Lib3.parseCommand (Lib2.toCliCommand e) @?= Right (e, "")
   ) Lib1.examples)
+
+
 
