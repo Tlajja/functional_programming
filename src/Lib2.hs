@@ -34,16 +34,20 @@ parseSequence input = case parseSimpleCommand input of
 --                           <add-card> | <remove-card> | <show-deck> | 
 --                           <count-cards> | <play-card> | <dump>
 parseSimpleCommand :: Parser Lib1.Command
-parseSimpleCommand = orElse (orElse (orElse (orElse (orElse (orElse (orElse (orElse
-  parseCreateDeck
-  parseShuffleDeck)
-  parseDrawCards)
-  parseAddCard)
-  parseRemoveCard)
-  parseShowDeck)
-  parseCountCards)
-  parsePlayCard)
-  parseDump
+parseSimpleCommand input = 
+  case orElse (orElse (orElse (orElse (orElse (orElse (orElse (orElse
+    parseCreateDeck
+    parseShuffleDeck)
+    parseDrawCards)
+    parseAddCard)
+    parseRemoveCard)
+    parseShowDeck)
+    parseCountCards)
+    parsePlayCard)
+    parseDump input of
+      Right result -> Right result
+      Left _ -> Left $ "Unknown command: '" ++ takeWhile (not . isWhitespaceChar) input ++ "'"
+
 
 -- BNF: <create-deck> ::= "create" <whitespace> "deck"
 parseCreateDeck :: Parser Lib1.Command
