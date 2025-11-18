@@ -4,14 +4,12 @@ import Test.Tasty.HUnit ( testCase, (@?=) )
 
 import Lib1 qualified
 import Lib2 qualified
-
 import Lib3 qualified
 
 main :: IO ()
 main = defaultMain tests
 
 tests :: TestTree
-
 tests = testGroup "Tests" [lib1Tests, lib2Tests, lib3Tests]
 
 lib1Tests :: TestTree

@@ -1,0 +1,3 @@
+create deck
+remove Four of Clubs
+remove Four of Diamonds

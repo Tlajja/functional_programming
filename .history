@@ -1,3 +1,18 @@
+count cards
+count cards
+remove Four of Diamonds
+count cards
+remove Four of Clubs
+count cards
+add Four of Diamonds
+count cards
+remove Four of Clubs
+count cards
+show deck
+shuffle deck
+create deck
+create-deck
+CreateDeck
 add Ace of Spades
 add Ace of Spades
 add ace of spades
@@ -83,18 +98,3 @@ dump\ examples
 calc (mul 5 (add 1 1))
 fdsf
 hghghg
-hghuhg
-dump examples 
-dump examples 
-dump\ examples 
-exampl
-examples 
-examplfssdf
-example
-examples 
-examples 
-fsdf
-examples 
-examples 
-fsdf
-examples 
